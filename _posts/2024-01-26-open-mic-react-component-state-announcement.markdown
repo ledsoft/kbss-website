@@ -10,8 +10,8 @@ The next open mic session will take place on Friday ~~2nd February~~ 16th Februa
 [Bogdan Kostov](https://kbss.felk.cvut.cz/web/team#bogdan-kostov) will explore in more detail, how component 'state' works in react.
 
 ##### The abstract
-
-The content will be added later.
+In React, Components are rendered according to their state. In this talk we will explore several topics regarding react component state. How React component state is declared and managed? How React processes state component changes? Furthermore, we will explore several interesting examples of component state.
 
 Further reading:
-Will be added later.
+
+[Managing React State](https://react.dev/learn/managing-state)

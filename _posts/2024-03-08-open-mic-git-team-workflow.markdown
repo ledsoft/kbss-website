@@ -6,8 +6,7 @@ excerpt: "This two-part presentation discussed best practices for using Git in a
 
 On Friday 1st and Friday 8th March our guest speaker [Petr Aubrecht](https://www.linkedin.com/in/petraubrecht/) held an Open Mic session with the topic \"Git Team Workflow\".
 
-
-{% include video id="-UriTtvcnmE" provider="youtube" %}
+_Video of the presentation will be available in the near future._
 
 ##### The abstract
 

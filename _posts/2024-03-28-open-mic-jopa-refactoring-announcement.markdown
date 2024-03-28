@@ -1,5 +1,5 @@
 ---
-title: "Upcoming Open Mic - Refactoring Application Ontology COncepts in JOPA based Applications"
+title: "Upcoming Open Mic - Refactoring Application Ontology Concepts in JOPA based Applications"
 categories: [Open Mic Announcement, Open Mic]
 ---
 

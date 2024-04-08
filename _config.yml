@@ -22,7 +22,7 @@ subtitle                 : # site tagline that appears below site title in masth
 name                     : "KBSS"
 description              : "Website of the Knowledge-based and Software Systems group. A research group at the Faculty of Electrical Engineering, Czech Technical University in Prague."
 url                      : "https://kbss.felk.cvut.cz"
-baseurl                  : "/web" # the subpath of your site, e.g. "/blog"
+baseurl                  : "/kbss-website" # the subpath of your site, e.g. "/blog"
 repository               : kbss-cvut/kbss-website
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/kbss-logo.png"

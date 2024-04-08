@@ -3,7 +3,7 @@ title: "Upcoming Open Mic - Refactoring Application Ontology Concepts in JOPA ba
 categories: [Open Mic Announcement, Open Mic]
 ---
 
-The next open mic session will take place on Friday 12th April 2024. Our next speaker is [Bogdan Kostov](https://kbss.felk.cvut.cz/web/team#bogdan-kostov) and his topic is . The speech takes place at 10:30 at [this link](https://meet.jit.si/open-mic-kbss).
+The next open mic session will take place exceptionally on Thursday (!!) 11th April 2024. Our next speaker is [Bogdan Kostov](https://kbss.felk.cvut.cz/web/team#bogdan-kostov) and his topic is . The speech takes place at 10:30 at [this link](https://meet.jit.si/open-mic-kbss).
 
 ##### Abstract
 

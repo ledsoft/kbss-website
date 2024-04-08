@@ -10,4 +10,4 @@ services:
     ports:
       - "4000:4000"
     volumes:
-      - $PWD:/srv/jekyll
+      - ./srv/jekyll

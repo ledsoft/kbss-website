@@ -12,4 +12,4 @@ VOLUME /srv/jekyll
 
 EXPOSE 4000
 
-CMD ["jekyll", "serve", "--host", "https://kbss.felk.cvut.cz"]
+CMD ["jekyll", "serve", "--host", "127.0.0.1"]

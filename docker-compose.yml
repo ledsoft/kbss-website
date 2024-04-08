@@ -5,7 +5,7 @@ services:
     build:
       context: .
     container_name: kbss-website
-    command: ["jekyll", "serve", "--host", "https://kbss.felk.cvut.cz", "--baseurl", "${BASENAME:-/kbss-website}"]
+    command: ["jekyll", "serve", "--host", "kbss.felk.cvut.cz", "--baseurl", "${BASENAME:-/kbss-website}"]
     restart: always
     ports:
       - "4000:4000"

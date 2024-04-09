@@ -7,7 +7,7 @@ main:
     url: /team
     description: "Team members and major publications"
   - title: "Ontologies and Software" #rename to Software?
-    url: /software
+    url: /software-ontologies
     description: "Ontologies and Software developed by the team"
   # - title: "Teaching"
   #   url: /teaching

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Ontologies and Software
-permalink: /software
+permalink: /software/
 lang: en
 lang-ref: software
 toc: true

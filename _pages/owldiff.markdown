@@ -1,7 +1,7 @@
 ---
 layout: single
 title: OWLDiff
-permalink: /software/owldiff
+permalink: /owldiff
 lang: en
 lang-ref: owldiff
 author_profile: true

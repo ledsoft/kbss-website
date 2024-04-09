@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Dataset Dashboard
-permalink: /software/dataset-dashboard
+permalink: /dataset-dashboard
 lang: en
 lang-ref: dataset-dashboard
 author_profile: true

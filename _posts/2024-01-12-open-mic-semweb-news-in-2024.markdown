@@ -6,7 +6,7 @@ excerpt: "The presentation discussed news in Semantic Web-related standards like
 
 On Friday 12th January, [Martin Ledvinka](https://kbss.felk.cvut.cz/web/team#martin-ledvinka) held an Open Mic session with the topic \"Semantic Web - What Is Coming in 2024?\"
 
-{% include video id="nnhZLZYQ5us" provider="youtube" %}
+{% include video id="d1lfWU4b4es" provider="youtube" %}
 
 ##### The abstract
 

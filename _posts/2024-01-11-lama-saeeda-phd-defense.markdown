@@ -1,6 +1,6 @@
 ---
 title: "Lama Saeeda Defended Her PhD Thesis"
-categories: "News"
+categories: [ News ]
 excerpt: "Our colleague Lama Saeeda successfully defended her dissertation thesis today."
 ---
 

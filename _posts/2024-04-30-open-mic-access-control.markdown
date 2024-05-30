@@ -1,5 +1,5 @@
 ---
-title: "Open Mic - How to Control Access to Enterprise Linked Data"
+title: "How to Control Access to Enterprise Linked Data"
 categories: [Open Mic Session, Open Mic]
 ---
 

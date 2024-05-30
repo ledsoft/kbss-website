@@ -1,22 +1,14 @@
 ---
-title: "Fill the title here"
+title: "Lessons Learned from the Latest Aviation Project"
 categories: [Open Mic Announcement, Open Mic]
 ---
-
-<!-- Naming convention: post MUST be named beginning with YEAR-MM-DD-title.MARKDOWN. Create a COPY of this file in _posts and rename it according to the convention. The date is not date of presentation, but date of publication of the announcement. The title in human readable form is put in the quotes to the title parameter in front matter  -->
-
-Content: Fill in when and where the next open mic session will take place. Remember, first paragraph is also an excerpt, so keep it short and informative. The best practice is: The Open mic session starts on Friday 14 April 2023 at [this link](https://meet.jit.si/open-mic-kbss). The speaker is [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško) who is going to talk about something really interesting.
-
-You may also include picture. For pictures, place them somewhere in assets/images/... and use following code:
-
-{% include figure image_path="/assets/images/path_to_the_image" alt="title on popup or when it cannot be shown" %}{: .align-right .profile-photo}
-
+Content: The Open mic session starts on Friday, May 31, 2024 at [this link](https://meet.jit.si/open-mic-kbss). The speaker is [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško), leader of the KBSS research group. He will discuss the lessons learned from the latest aviation project, which involves developing an information system for AERO Vodochody AEROSPACE a.s (AVA). This system aims to collect and process operational data to enhance the safety and reliability of aircraft. A key objective of the operational data is to provide input for failure analysis using the Fault Tree Analysis (FTA) technique.
 
 ##### The abstract
 
-Text of the abstract will be here. It may be also as a short summary.
-
-In the end, you may include further reading.
+This presentation outlines the development workflow and tools utilized in creating an information system for AERO Vodochody AEROSPACE a.s. It will cover the application of KBSS tools such as SPipes, SForms, and JOPA and address the new challenges encountered during the project. Additionally, the presentation will delve into using GitHub for project management and git workflows, Figma for design, and Docker for orchestration, highlighting associated issues. Challenges related to integrating Keycloak for user management across multiple applications, refactoring RDF data, and shaping RDF data within REST APIs will also be discussed. The session will conclude with insights on using conversational AI in the development process.
 
 Further reading:
-* [Link text](https://linkadre.ss)
+* [SForms - Ontology-based Smart Forms](https://github.com/kbss-cvut/s-forms)
+* [SPipes - Engine for Processing Semantic Pipelines Defined in RDF](https://github.com/kbss-cvut/s-forms)
+* [JOPA - Java OWL Persistence API](https://github.com/kbss-cvut/jopa)

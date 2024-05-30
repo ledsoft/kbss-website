@@ -1,8 +1,8 @@
 ---
-title: "Lessons Learned from the Development of a System for Safety and Reliability of Aircraft"
+title: "Upcoming Open Mic: Lessons Learned from the Development of a System for Safety and Reliability of Aircraft"
 categories: [Open Mic Announcement, Open Mic]
 ---
-Content: The Open mic session starts on Friday, May 31, 2024 at 12:30 at [this link](https://meet.jit.si/open-mic-kbss). The speaker is [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško), leader of the KBSS research group. He will discuss the lessons learned from the latest aviation project, which involves developing an information system for AERO Vodochody AEROSPACE a.s (AVA). This system aims to collect and process operational data to enhance the safety and reliability of aircraft. A key objective of the operational data is to provide input for failure analysis using the Fault Tree Analysis (FTA) technique.
+The Open mic session starts on Friday, May 31, 2024 at 12:30 at [this link](https://meet.jit.si/open-mic-kbss). The speaker is [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško), leader of the KBSS research group. He will discuss the lessons learned from the latest aviation project, which involves developing an information system for AERO Vodochody AEROSPACE a.s (AVA). This system aims to collect and process operational data to enhance the safety and reliability of aircraft. A key objective of the operational data is to provide input for failure analysis using the Fault Tree Analysis (FTA) technique.
 
 ##### Abstract
 

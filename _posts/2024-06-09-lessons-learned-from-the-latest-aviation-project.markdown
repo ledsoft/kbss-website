@@ -5,7 +5,6 @@ categories: [Open Mic Session, Open Mic]
 
 On Friday 31st April 2024, our research group leader [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miro-blaško) discussed in an open mic session the lessons learned from the latest aviation project, which involved developing an information system for AERO Vodochody AEROSPACE a.s. (AVA). This system aims to collect and process operational data to enhance the safety and reliability of aircraft. A key objective of the operational data is to provide input for failure analysis using the Fault Tree Analysis (FTA) technique.
 
-
 {% include video id="hkYzSiSm376m8P7n" provider="youtube" %}
 
 ##### Abstract

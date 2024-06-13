@@ -1,5 +1,5 @@
 ---
-title: "How to Control Access to Enterprise Linked Data"
+title: "Lessons Learned from the Last Aviation Project"
 categories: [Open Mic Session, Open Mic]
 ---
 

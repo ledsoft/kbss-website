@@ -2,15 +2,19 @@
 title: "Mapping Various Metadata Profiles to DCAT Family"
 categories: [Open Mic Session, Open Mic]
 ---
-On friday 14th June 2024 our host [Michal Med](https://kbss.felk.cvut.cz/web/team#michal-med) spoke about various metadata profiles and their mapping to the European application profile of the Data Catalogue Vocabulary (DCAT-AP), which is mandatory to share metadata in the European Union and also to share open data in order to fulfill Czech open data legislation. 
+On Friday 14th June 2024 our host [Michal Med](https://kbss.felk.cvut.cz/web/team#michal-med) spoke about various metadata profiles and their mapping to the European application profile of the Data Catalogue Vocabulary (DCAT-AP), which is mandatory to share metadata in the European Union and also to share open data in order to fulfill Czech open data legislation. 
 
 {% include video id="iEuR7yX2k5A" provider="youtube" %}
 
 ##### Abstract
 Metadata are the informational documents about the data or other resources. They usually contain basic information about the content of the resource, its origin, information about the author or custodian including the contact, conditions for the usage of the data and also qualitative and/or quantitative properties. They are mostly used for discoverability of the resources in the catalogues, statistics and qualitative or quantitative evaluation. Among various domains, based on the purpose of the metadata and characteristics of the resources, there are also various metadata profiles, containing different types of information and having different structure, based mostly on the purpose to which they were made and used.
+
 The problem occurs, when metadata, traditionally published in the domain specific profile (e.g. ISO 19139 family [1] for spatial data or DataCite [2] for scientific data) have a legislative obligation [3,4] to be published in the metadata catalogues using another metadata profile, such as DCAT-AP [5] for European data catalogues or DCAT-AP-CZ [6] for open data.
+
 Then, we need to find a functional mapping between the profiles, without the loss of information and also its meaning. In the speech we analyse three families of metadata profiles -- ISO 19139 for spatial data and services, DataCite for scientific data an resources and DCAT-AP for publication and discoverability of data in European infrasructures and open data -- try to create some functional mapping between them leading to the convertability of various profiles with focus on reusing existing ontologies and respecting principles of linked open (meta)data.
-Yhe presentation shows that some functional mapping between profiles already exist, namely GeoDCAT-AP [7] for conversion between ISO 19139 metadata and DCAT-AP and CiteDCAT-AP [8,9] to conform DCAT-AP from DataCite oriented metadata. The mappings have their problems with functional extensions, e.g. INSPIRE metadata profile [10] or Czech national metadata profile [11] extending ISO 19139 metadata or DCAT-AP-CZ extending DCAT-AP and also with version compatibility of particular mappings, where DCAT-AP-CZ extends DCAT-AP in version 3.0, while GeoDCAT maps metadata properties to the DCAT-AP 2.0.1 etc.
+
+The presentation shows that some functional mapping between profiles already exist, namely GeoDCAT-AP [7] for conversion between ISO 19139 metadata and DCAT-AP and CiteDCAT-AP [8,9] to conform DCAT-AP from DataCite oriented metadata. The mappings have their problems with functional extensions, e.g. INSPIRE metadata profile [10] or Czech national metadata profile [11] extending ISO 19139 metadata or DCAT-AP-CZ extending DCAT-AP and also with version compatibility of particular mappings, where DCAT-AP-CZ extends DCAT-AP in version 3.0, while GeoDCAT maps metadata properties to the DCAT-AP 2.0.1 etc.
+
 All these problems are analysed and addressed in the presentation, concluding to the set of steps that must be done to fulfil the legislative obligations and keep the metadata useful at the place where they are used now at the same time.
 
 {% include figure image_path="/assets/images/openmics/2024-06-14-wine-metadata.png" alt="Metadata of wine." %}{: .post-image }

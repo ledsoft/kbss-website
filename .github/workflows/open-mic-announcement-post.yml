@@ -35,10 +35,10 @@ jobs:
     - name: Test
       run: |
         git status
+        
     - name: Create PR
-      uses: github-script@v6
+      uses: actions/github-script@v7.0.1
       with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             github.pulls.create({
               title: 'Open mic announcement for ${{ github.event.inputs.open_mic_session_title }}',

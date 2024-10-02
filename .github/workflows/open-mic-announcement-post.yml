@@ -14,36 +14,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-    - name: Checkout new branch
-      run: |
-        git checkout -B open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}
-    - name: Create announcement post from template
-      run: |
-        TITLE_ID=$(echo ${{ github.event.inputs.open_mic_session_title }} | sed 's/ /-/g' | tr [A-Z] [a-z])
-        cp ./_drafts/open-mic-announcement-template.markdown  ./_posts/${{ github.event.inputs.open_mic_session_date }}-${TITLE_ID}-announcement.markdown
-    - name: Commit changes
-      run: |
-        git add .
-        git config --global user.email "${{ github.event.sender.email }}"
-        git config --global user.name "${{ github.event.sender.login }}"
-        git commit -m "[New] Open mic announcement for ${{ github.event.inputs.open_mic_session_date }}"
-        git push --set-upstream origin open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}
-    - name: Test
-      run: |
-        git status
-        
-    - name: Create pull request
-      run: gh pr create -B 'master' -H 'open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}' --title 'Open mic announcement for ${{ github.event.inputs.open_mic_session_title }}' --body 'Created by Github action'
-      env:
-        GH_TOKEN: ${{ github.token }}
-    - name: Create pull request 2
-      uses: peter-evans/create-pull-request@v3
-      with:
-        title: 'Open mic announcement for ${{ github.event.inputs.open_mic_session_date }}'
-        commit-message: 'Open-mic announcement for "${{ github.event.inputs.open_mic_session_title }}" that will be run at ${{ github.event.inputs.open_mic_session_date }}.'
-        branch: 'open-mic-session-${{ github.event.inputs.open_mic_session_date }}'
-        base: 'master'
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Checkout new branch
+        run: |
+          git checkout -B open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}
+      - name: Create announcement post from template
+        run: |
+          TITLE_ID=$(echo ${{ github.event.inputs.open_mic_session_title }} | sed 's/ /-/g' | tr [A-Z] [a-z])
+          cp ./_drafts/open-mic-announcement-template.markdown  ./_posts/$(date +"%Y-%m-%d")-${TITLE_ID}-announcement.markdown
+      - name: Commit changes
+        run: |
+          git add .
+          git config --global user.email "${{ github.event.sender.email }}"
+          git config --global user.name "${{ github.event.sender.login }}"
+          git commit -m "[New] Open mic announcement for ${{ github.event.inputs.open_mic_session_date }}"
+          git push --set-upstream origin open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}
+      - name: Create pull request
+        run: gh pr create -B 'master' -H 'open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}' --title 'Open mic announcement for ${{ github.event.inputs.open_mic_session_title }}' --body 'Created by Github action'
+        env:
+          GH_TOKEN: ${{ github.token }}

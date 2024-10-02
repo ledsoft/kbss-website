@@ -37,7 +37,7 @@ jobs:
         git status
         
     - name: Create pull request
-      run: gh pr create -B 'main' -H 'open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}' --title 'Open mic announcement for ${{ github.event.inputs.open_mic_session_title }}' --body 'Created by Github action'
+      run: gh pr create -B 'master' -H 'open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}' --title 'Open mic announcement for ${{ github.event.inputs.open_mic_session_title }}' --body 'Created by Github action'
       env:
         GH_TOKEN: ${{ github.token }}
     - name: Create pull request 2

@@ -36,17 +36,9 @@ jobs:
       run: |
         git status
         
-    - name: Create PR
-      uses: actions/github-script@v7.0.1
-      with:
-          script: |
-            github.pulls.create({
-              title: 'Open mic announcement for ${{ github.event.inputs.open_mic_session_title }}',
-              head: 'open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}',
-              base: 'main',
-              body: 'This is an automated PR'
-            })
     - name: Create pull request
+      run: gh pr create -B 'main' -H 'open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}' --title 'Open mic announcement for ${{ github.event.inputs.open_mic_session_title }}' --body 'Created by Github action'
+    - name: Create pull request 2
       uses: peter-evans/create-pull-request@v3
       with:
         title: 'Open mic announcement for ${{ github.event.inputs.open_mic_session_date }}'

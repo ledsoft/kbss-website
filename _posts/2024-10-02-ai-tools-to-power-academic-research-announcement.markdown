@@ -1,11 +1,8 @@
 ---
-title: "AI tools to power academic research"
+title: "Upcoming Open Mic - AI tools to power academic research"
 categories: [Open Mic Announcement, Open Mic]
 ---
-
-<!-- Naming convention: post MUST be named beginning with YEAR-MM-DD-title.MARKDOWN. Create a COPY of this file in _posts and rename it according to the convention. The date is not date of presentation, but date of publication of the announcement. The title in human readable form is put in the quotes to the title parameter in front matter  -->
-
-Content: The Open mic session starts on Friday 4 October 2024 at 10:30 via [this link](https://meet.jit.si/open-mic-kbss). The speaker is [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško) who is going to talk about AI tools to help improve academic research.
+The Open mic session starts on Friday 4 October 2024 at 10:30 via [this link](https://meet.jit.si/open-mic-kbss). The speaker is [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško) who is going to talk about AI tools to help improve academic research.
 
 
 ##### The abstract

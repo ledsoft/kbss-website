@@ -9,7 +9,7 @@ The Open mic session took place on Friday 20th June 2024. The speaker [Michal Me
 ##### Problem?
 The speech is trying to get the solution to the following problem: **how to automatically update the ontology documentation on the web when the ontology is updated?**
 
-{% include figure image_path="assets/images/openmics/2024-09-20-problem.png" alt="Problem definition." %}{: .post-image }
+{% include figure image_path="assets/images/posts/2024-09-20-problem.png" alt="Problem definition." %}{: .post-image }
 
 There are plenty of options on how to do this, but most of them have to solve following four questions:
 1) Where to store the ontology/ies?
@@ -20,7 +20,7 @@ There are plenty of options on how to do this, but most of them have to solve fo
 ##### Solution!
 As written before, there is definitely more ways on how to solve the problem. Proposed solution is pictured in the following diagram:
 
-{% include figure image_path="assets/images/openmics/2024-09-20-solution.png" alt="Solution diagram." %}{: .post-image }
+{% include figure image_path="assets/images/posts/2024-09-20-solution.png" alt="Solution diagram." %}{: .post-image }
 
 We propose using GitHub[2] to store the ontology and then use a webhook to send information about the change and also some of the metadata. On the other side is Jenkins[3] handling the webhook payload. There are still some variables passed on through metadata configuration file or written in the pipeline by hand, but most of them could be passed on from the webhook payload, or using the ontology properties. This will be investigated in more detaile in the future work. Jenkins then runs Widoco[4] with the variables extracted from webhook payload and generates documentation on the server, where the Jenkins is running. The last step is deployment on the server. Jenkins pipeline copies all the files to the publication server and changes the ownership of the files to be readable. It also checks the current version of the ontology nad recreates the symlink if needed. Last manual work for the NEW ontologies is to add aliases and rewrite conditions in the Apache HTTP server[5] configuration, so the documentation web pages are published.
 

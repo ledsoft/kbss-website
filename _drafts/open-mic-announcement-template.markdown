@@ -1,5 +1,5 @@
 ---
-title: "Upcoming Open Mic - ${OPEN_MIC_TITLE}"
+title: "Upcoming Open Mic - ${OPEN_MIC_SESSION_TITLE}"
 categories: [Open Mic Announcement, Open Mic]
 ---
 

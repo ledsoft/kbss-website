@@ -32,6 +32,20 @@ jobs:
         git config --global user.name "${{ github.event.sender.login }}"
         git commit -m "[New] Open mic announcement for ${{ github.event.inputs.open_mic_session_date }}"
         git push --set-upstream origin open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}
+    - name: Test
+      run: |
+        git status
+    - name: Create PR
+      uses: github-script@v6
+      with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            github.pulls.create({
+              title: 'Open mic announcement for ${{ github.event.inputs.open_mic_session_title }}',
+              head: 'open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}',
+              base: 'main',
+              body: 'This is an automated PR'
+            })
     - name: Create pull request
       uses: peter-evans/create-pull-request@v3
       with:

@@ -1,5 +1,5 @@
 ---
-title: "Upcoming Open Mic - Generating and Publishing Ontology Documentation"
+title: "Generating and Publishing Ontology Documentation"
 categories: [Open Mic Session, Open Mic]
 ---
 The Open mic session took place on Friday 20th June 2024. The speaker [Michal Med](https://kbss.felk.cvut.cz/web/team#michal-med) introduced his research in the automatic generation and publication of documentation of ontologies. This session follows up the speech from December 2023[1]. The whole speech, including the discussion, was as usual recorded. The video is available here:

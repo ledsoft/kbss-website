@@ -2,7 +2,7 @@
 title: "Upcoming Open Mic - AI tools to power academic research"
 categories: [Open Mic Announcement, Open Mic]
 ---
-The Open mic session starts on Friday 4 October 2024 at 10:30 via [this link](https://meet.jit.si/open-mic-kbss). The speaker is [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško) who is going to talk about AI tools to help improve academic research.
+The Open mic session starts on Friday 11th October 2024 at 10:30 via [this link](https://meet.jit.si/open-mic-kbss). The speaker is [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško) who is going to talk about AI tools to help improve academic research.
 
 
 ##### The abstract

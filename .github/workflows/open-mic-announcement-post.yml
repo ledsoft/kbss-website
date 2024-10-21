@@ -18,9 +18,12 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: Define the branch name
+        id: vars
+        run: echo "BRANCH_NAME=open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}" >> $GITHUB_ENV
       - name: Checkout new branch
         run: |
-          git checkout -B open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}
+          git checkout -B "$BRANCH_NAME"
       - name: Create announcement post from template
         run: |
           TITLE_ID=$(echo "${{ github.event.inputs.open_mic_session_title }}" | sed 's/ /-/g' | tr [A-Z] [a-z])
@@ -35,8 +38,8 @@ jobs:
           git config --global user.email "${{ github.event.sender.email }}"
           git config --global user.name "${{ github.event.sender.login }}"
           git commit -m "[New] Open mic announcement for ${{ github.event.inputs.open_mic_session_date }}"
-          git push --set-upstream origin open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}
+          git push --set-upstream origin "$BRANCH_NAME"
       - name: Create pull request
-        run: gh pr create -B 'master' -H 'open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}' --title 'Open mic announcement for ${{ github.event.inputs.open_mic_session_title }}' --body 'Created by Github action'
+        run: gh pr create -B 'master' -H "$BRANCH_NAME" --title 'Open mic announcement for ${{ github.event.inputs.open_mic_session_title }}' --body 'Created by Github action'
         env:
           GH_TOKEN: ${{ github.token }}

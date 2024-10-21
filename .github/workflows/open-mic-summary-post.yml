@@ -1,0 +1,45 @@
+name: Post open-mic summary
+
+on:
+  workflow_dispatch:
+    inputs:
+      open_mic_session_date:
+        description: 'Date of open-mic session in YYYY-MM-DD format (e.g. 2023-01-31)'
+        required: true
+      open_mic_session_title:
+        description: 'Title of open-mic session'
+        required: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Define the branch name
+        id: vars
+        run: echo "BRANCH_NAME=open-mic-summary-${{ github.event.inputs.open_mic_session_date }}" >> $GITHUB_ENV
+      - name: Checkout new branch
+        run: |
+          git checkout -B "$BRANCH_NAME"
+      - name: Create summary post from template
+        run: |
+          TITLE_ID=$(echo "${{ github.event.inputs.open_mic_session_title }}" | sed 's/ /-/g' | tr [A-Z] [a-z])
+          OUTPUT_FILE=./_posts/$(date +"%Y-%m-%d")-${TITLE_ID}--open-mic-summary.markdown
+          OPEN_MIC_SESSION_DATE_INFORMAL=$(date -d "${{ github.event.inputs.open_mic_session_date }}" +"%A %-d %B %Y")
+          cp ./_drafts/open-mic-session-template.markdown ${OUTPUT_FILE}
+          sed -i "s/\${OPEN_MIC_SESSION_TITLE}/${{ github.event.inputs.open_mic_session_title }}/g" ${OUTPUT_FILE}
+          sed -i "s/\${OPEN_MIC_SESSION_DATE}/${OPEN_MIC_SESSION_DATE_INFORMAL}/g" ${OUTPUT_FILE}
+      - name: Commit changes
+        run: |
+          git add .
+          git config --global user.email "${{ github.event.sender.email }}"
+          git config --global user.name "${{ github.event.sender.login }}"
+          git commit -m "[New] Open mic summary for ${{ github.event.inputs.open_mic_session_date }}"
+          git push --set-upstream origin "$BRANCH_NAME"
+      - name: Create pull request
+        run: gh pr create -B 'master' -H "$BRANCH_NAME" --title 'Open mic summary for ${{ github.event.inputs.open_mic_session_title }}' --body 'Created by Github action'
+        env:
+          GH_TOKEN: ${{ github.token }}

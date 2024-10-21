@@ -16,7 +16,7 @@ Video is uploaded to youtube by Michal. The id parameter is part of the link beh
 
 Conversational AI tools provide valuable assistance in numerous facets of academic research, such as idea generation, outlining, content drafting, text editing, feedback, and literature searching and summarization. 
 This presentation identified key categories to categorize the various ways these tools can aid academic research.
-Finally, the tools  were highlighted as particularly relevant, accompanied by practical demonstrations of their use.
+Finally, the tools [Research Rabbit](https://researchrabbitapp.com/) and [ChatPDF](https://www.chatpdf.com/) were highlighted as particularly relevant, accompanied by practical demonstrations of their use.
 
 The presentation slides are available [at this link](https://drive.google.com/file/d/1FhMofP13lNarQygoIeiH8T5b_LpSOWxY/view?usp=sharing).
 

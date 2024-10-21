@@ -1,17 +1,10 @@
 ---
 title:  "AI tools to power academic research"
 categories: [Open Mic Session, Open Mic]
-excerpt: "Short description of the session topic that is displayed below the article header on the landing page."
+excerpt: "AI tools to help improve academic research."
 ---
 
-<!-- Fixing content of this file:
-  - [IF NOT RUNNING FROM GITHUB ACTION] replace all variables within this file surrounded by `${` `}`, example values are:
-    - OPEN_MIC_SESSION_TITLE=`Debugging SPARQL queries`
-    - OPEN_MIC_SESSION_DATE=`Friday 4 April 2023`
-  - remove all comments from this file
--->
-
-First paragraph describes who, what and when. It shall contain something like: On Friday 11 October 2024 speaker [Michal Med](https://kbss.felk.cvut.cz/web/team#michal-med) held an Open Mic session with the topic \"AI tools to power academic research\". Video and presentation included.
+On Friday 11 October 2024 speaker [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško) held an Open Mic session with the topic \"AI tools to power academic research\". Video and presentation included.
 
 Then include video using following code:
 
@@ -21,16 +14,13 @@ Video is uploaded to youtube by Michal. The id parameter is part of the link beh
 
 ##### The abstract
 
-In the rest of the text, describe what was the presentation about, include some figures, link to the presentation (make sure it is shared with everyone with link) and you may also add some further reading.
+Conversational AI tools provide valuable assistance in numerous facets of academic research, such as idea generation, outlining, content drafting, text editing, feedback, and literature searching and summarization. 
+This presentation identified key categories to categorize the various ways these tools can aid academic research.
+Finally, the tools  were highlighted as particularly relevant, accompanied by practical demonstrations of their use.
 
-Either link to figures online or upload them to assets/images/posts folder:
-{% include figure image_path="assets/images/posts/image-name.png" alt="description text" %}
-
-
-Upload the slides to https://drive.google.com/drive/u/0/folders/1SD92CFn01BFnajc8ZlNUvgJaRvHiIUld
-
-The presentation slides are available [at this link](https://drive.google.com/file/d/1HuDqFeqkBBrCmcQzAOJ7PoOFwlIoOlAF/view?usp=sharing).
+The presentation slides are available [at this link](https://drive.google.com/file/d/1FhMofP13lNarQygoIeiH8T5b_LpSOWxY/view?usp=sharing).
 
 Links:
-Further reading:
-* [Link text](https://linkadre.ss)
+* [Bello, C. (2024, January 20). The best AI tools to power your academic research. Euronews.](https://www.euronews.com/next/2024/01/20/best-ai-tools-academic-research-chatgpt-consensus-chatpdf-elicit-research-rabbit-scite)
+* [Research Rabbit](https://researchrabbitapp.com/)
+* [ChatPDF](https://www.chatpdf.com/)

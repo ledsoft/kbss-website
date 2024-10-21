@@ -23,7 +23,7 @@ jobs:
           git checkout -B open-mic-annoncement-${{ github.event.inputs.open_mic_session_date }}
       - name: Create announcement post from template
         run: |
-          TITLE_ID=$(echo ${{ github.event.inputs.open_mic_session_title }} | sed 's/ /-/g' | tr [A-Z] [a-z])
+          TITLE_ID=$(echo "${{ github.event.inputs.open_mic_session_title }}" | sed 's/ /-/g' | tr [A-Z] [a-z])
           OUTPUT_FILE=./_posts/$(date +"%Y-%m-%d")-${TITLE_ID}-announcement.markdown
           OPEN_MIC_SESSION_DATE_INFORMAL=$(date -d "${{ github.event.inputs.open_mic_session_date }}" +"%A %-d %B %Y")
           cp ./_drafts/open-mic-announcement-template.markdown  ${OUTPUT_FILE}

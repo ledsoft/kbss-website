@@ -1,10 +1,17 @@
 ---
-title:  "Title of the open mic session"
+title:  "${OPEN_MIC_SESSION_TITLE}"
 categories: [Open Mic Session, Open Mic]
 excerpt: "Short description of the session topic that is displayed below the article header on the landing page."
 ---
 
-First paragraph describes who, what and when. It shall contain something like: On Friday 13th May speaker [Michal Med](https://kbss.felk.cvut.cz/web/team#michal-med) held an Open Mic session with the topic \"Jobs to be Done\". Video and presentation included.
+<!-- Fixing content of this file:
+  - [IF NOT RUNNING FROM GITHUB ACTION] replace all variables within this file surrounded by `${` `}`, example values are:
+    - OPEN_MIC_SESSION_TITLE=`Debugging SPARQL queries`
+    - OPEN_MIC_SESSION_DATE=`Friday 4 April 2023`
+  - remove all comments from this file
+-->
+
+First paragraph describes who, what and when. It shall contain something like: On ${OPEN_MIC_SESSION_DATE} speaker [Michal Med](https://kbss.felk.cvut.cz/web/team#michal-med) held an Open Mic session with the topic \"${OPEN_MIC_SESSION_TITLE}\". Video and presentation included.
 
 Then include video using following code:
 

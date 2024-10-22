@@ -1,16 +1,11 @@
 ---
 title:  "AI tools to power academic research"
 categories: [Open Mic Session, Open Mic]
-excerpt: "AI tools to help improve academic research."
 ---
 
 On Friday 11 October 2024 speaker [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško) held an Open Mic session with the topic \"AI tools to power academic research\". Video and presentation included.
 
-Then include video using following code:
-
 {% include video id="AtoUshTdiXU" provider="youtube" %}
-
-Video is uploaded to youtube by Michal. The id parameter is part of the link behind v=.
 
 ##### The abstract
 

@@ -8,7 +8,7 @@ On Friday 11 October 2024 speaker [Miroslav Blaško](https://kbss.felk.cvut.cz/w
 
 Then include video using following code:
 
-{% include video id="-UriTtvcnmE" provider="youtube" %}
+{% include video id="AtoUshTdiXU" provider="youtube" %}
 
 Video is uploaded to youtube by Michal. The id parameter is part of the link behind v=.
 

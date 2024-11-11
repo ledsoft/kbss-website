@@ -1,36 +1,31 @@
 ---
-title:  "OntoDESIDE and PatOMat2 - Using Ontologies to Support Circular Economy"
+title:  "Onto-DESIDE and PatOMat2 - Using Ontologies to Support Circular Economy"
 categories: [Open Mic Session, Open Mic]
-excerpt: "Short description of the session topic that is displayed below the article header on the landing page."
 ---
 
-<!-- Fixing content of this file:
-  - [IF NOT RUNNING FROM GITHUB ACTION] replace all variables within this file surrounded by `${` `}`, example values are:
-    - OPEN_MIC_SESSION_TITLE=`Debugging SPARQL queries`
-    - OPEN_MIC_SESSION_DATE=`Friday 4 April 2023`
-  - remove all comments from this file
--->
 
-First paragraph describes who, what and when. It shall contain something like: On Friday 8 November 2024 speaker [Michal Med](https://kbss.felk.cvut.cz/web/team#michal-med) held an Open Mic session with the topic \"OntoDESIDE and PatOMat2 - Using Ontologies to Support Circular Economy\". Video and presentation included.
+On Friday 8th November 2024 our guest speaker prof. [Vojtěch Svátek](https://nb.vse.cz/~svatek/) held an Open Mic session with the topic \"Onto-DESIDE and PatOMat2 - Using Ontologies to Support Circular Economy\".
 
-Then include video using following code:
+{% include video id="jVY1-R3aIKM" provider="youtube" %}
 
-{% include video id="-UriTtvcnmE" provider="youtube" %}
+##### Abstract
 
-Video is uploaded to youtube by Michal. The id parameter is part of the link behind v=.
+Circular economy is a hot topic nowadays. One of the challenges is ensuring that all entities in a product lifecycle are able to communicate
+with each other and share information.
 
-##### The abstract
+The goal of the [Onto-DESIDE](https://ontodeside.eu/) is addressing these challenges in a way that supports both humans and machines. Semantic Web ontologies
+have been selected as a means to provide this interoperability. In particular, each step in a product lifecycle may be described by an ontological vocabulary
+specific to that particular industry domain. Prof. Svátek and his colleagues
+contribute to the Onto-DESIDE project, among other things, by helping to create a semi-automated way of mapping these vocabularies using transformation patterns.
 
-In the rest of the text, describe what was the presentation about, include some figures, link to the presentation (make sure it is shared with everyone with link) and you may also add some further reading.
+To facilitate this goal, [PatOMat2](https://github.com/Onto-DESIDE-VSE/patomat2) - a pattern-based ontology transformation tool - has been developed. The session thus also includes a short demo
+of PatOMat2.
 
-Either link to figures online or upload them to assets/images/posts folder:
-{% include figure image_path="assets/images/posts/image-name.png" alt="description text" %}
+{% include figure image_path="https://ontodeside.eu/wp-content/uploads/2023/03/Pic.png" alt="Onto-DESIDE schema" caption="Onto-DESIDE principles in picture. Source: https://ontodeside.eu/" %}
 
+The presentation slides are available [at this link](https://drive.google.com/file/d/1WV4gNVD1x4MgAUBVQmvYlBScYJpimEnJ/view?usp=sharing).
 
-Upload the slides to https://drive.google.com/drive/u/0/folders/1SD92CFn01BFnajc8ZlNUvgJaRvHiIUld
-
-The presentation slides are available [at this link](https://drive.google.com/file/d/1HuDqFeqkBBrCmcQzAOJ7PoOFwlIoOlAF/view?usp=sharing).
-
-Links:
 Further reading:
-* [Link text](https://linkadre.ss)
+* [Onto-DESIDE](https://ontodeside.eu/)
+* [PatOMAt2](https://github.com/Onto-DESIDE-VSE/patomat2)
+* [Original PatOMat](https://patomat.vse.cz/)

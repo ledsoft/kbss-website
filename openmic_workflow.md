@@ -18,6 +18,19 @@ It consists of two posts:
 
 ### How To Create The Posts:
 
+If you have access to GitHub actions (tab `Actions`) of this repository, they can help you create posts [semi-automatically](#using-github-action).
+Otherwise, you have to do it [manually](#manually). 
+
+
+#### Using Github Action
+
+There are two GitHub that can be used to create posts: one for [sessions](https://github.com/kbss-cvut/kbss-website/actions/workflows/open-mic-summary-post.yml) and one
+for [announcements](https://github.com/kbss-cvut/kbss-website/actions/workflows/open-mic-announcement-post.yml). The actions can be started using `Run workflow` button
+which opens a modal dialog to enter required information (e.g. date of the session). After a successful run of the workflow, a pull request (PR) is created, which one 
+can revise and fine-tune.
+
+#### Manually
+
 There are two templates, one for [sessions](_drafts/open-mic-session-template.markdown) and one
 for [announcements](_drafts/open-mic-announcement-template.markdown). Templates are located in the `_drafts` folder and
 contain instructions:

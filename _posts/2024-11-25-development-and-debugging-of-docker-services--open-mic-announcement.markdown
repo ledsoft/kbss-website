@@ -4,7 +4,7 @@ categories: [Open Mic Announcement, Open Mic]
 ---
 
 
-The Open mic session starts on Friday 29 November 2024 at 10:30 via [this link](https://meet.jit.si/open-mic-kbss). The speaker is [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško), who will talk about the development of docker services at KBSS.
+The Open mic session starts on Friday 29 November 2024 at 10:30 via [this link](https://meet.jit.si/open-mic-kbss). The speaker is [Miroslav Blaško](https://kbss.felk.cvut.cz/web/team#miroslav-blaško), who will talk about the development of Docker-based services at KBSS.
 
 ##### The abstract
 

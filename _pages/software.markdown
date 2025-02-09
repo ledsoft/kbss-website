@@ -89,7 +89,7 @@ The dataset dashboard is a tool for getting a quick overview over a SPARQL endpo
 
 OntoMind is a tool for semantic mind mapping. We used it in the [MONDIS project](https://mondis.cz) for monument damage example management.
 
-[Detailed description]({{"/ontomind" | relative_url}}){: .btn .btn--info}
+[Detailed description](https://www.mondis.cz/web/portal/ontomind){: .btn .btn--info}
 
 
 #### OWLDiff
